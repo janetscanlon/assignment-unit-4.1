@@ -8,40 +8,49 @@ console.log('***** Function Practice *****');
 function hello() {
   return 'Hello World!';
 }
+
 // Call the function to test
 console.log('Test - should say "Hello World!"', hello());
-
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName(name) {
-  return;
+return `Hello, ${name}!`;
 }
-// Remember to call the function to test
 
+// Remember to call the function to test
+console.log(helloName('janet'));
 
 // 3. Function to add two numbers together & return the result
-function addNumbers(firstNumber) {
-  // return firstNumber + secondNumber;
+function addNumbers(firstNumber, secondNumber) {
+  let answer = firstNumber + secondNumber;
+  return answer; // return firstNumber + secondNumber;
 }
 
+console.log('This is the addNumbers function with 4, 6', addNumbers(4,6));
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree() {
-
+function multiplyThree(num1, num2, num3) {
+  let answer = num1 * num2 * num3 
+  return answer;
 }
 
+console.log('This is the multiplyThree fuction with 3, 8, 4', multiplyThree(3,8,4));
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive(number) {
   if (number > 0) {
-    return;
+    return true;
   }
-  return;
+  else{
+  return false;
+}
 }
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
+console.log('isPositive test with 4', isPositive(4));
+console.log('isPositive test with -24', isPositive(-24));
 
 
 // 6. Function to return the _last_ item in an array. If the 

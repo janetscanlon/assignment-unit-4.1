@@ -95,15 +95,24 @@ console.log('the searched value is 66, the array is [1,4,5,3]', find(3,[13,88,76
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
-
+  if(letter === string.charAt(0)){
+    return true;
+  }
+  return false;
 }
+
+console.log('this is a test for isFirstLetter function the letter is a and the word is angel', isFirstLetter('a', 'angle'));
+console.log('this is a test for isFirstLetter function the letter is b and the word is cat', isFirstLetter('b', 'cat'));
+console.log('this is a test for isFirstLetter function the letter is b and the word is cab', isFirstLetter('b', 'cab'));
 
 
 // 9. Function to return the sum of all numbers in an array
 function sumAll(array) {
   let sum = 0;
   // TODO: loop to add items
-
+  for(let integer of array){
+    sum = integer + integer
+  } 
   // TODO: return the sum
 }
 

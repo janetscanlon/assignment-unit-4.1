@@ -20,7 +20,7 @@ return `Hello, ${name}!`;
 
 // Remember to call the function to test
 console.log(helloName('janet'));
-
+ 
 // 3. Function to add two numbers together & return the result
 function addNumbers(firstNumber, secondNumber) {
   let answer = firstNumber + secondNumber;
@@ -61,8 +61,8 @@ function getLast(array) {
 let last = array[array.length-1];
 return last;
 
-
 }
+
 console.log('the array is [1,2,3,6], the last value of the array is', getLast([1,2,3,6]),);
 console.log('the array is [300,4,79,355], the last value of the array is', getLast([300,4,79,355]),);
 console.log('the array is empty', getLast([]));
@@ -77,7 +77,7 @@ console.log('the array is empty', getLast([]));
 // else return false 
 
 function find(value, array){
-  for(int of array){
+  for(let int of array){
   if(int === value){
     return true;
     }

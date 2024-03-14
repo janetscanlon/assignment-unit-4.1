@@ -124,9 +124,22 @@ console.log('this is a test for the sumAll function the array is [1,2,3,4]', sum
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-function allPositive() {
 
+
+function allPositive(array) {
+let positives = [];
+for(let integer of array){
+  if(integer > 0){
+  positives.push(integer);
+    }
+  }
+return positives;
 }
+
+console.log('this is a test for the allPositive function, the array is [7,3,4,7,0]', allPositive([7,3,4,7,0]));
+console.log('this is a test for the allPositive function, the array is [-6,34,88,5,1]', allPositive([-6,34,88,5,1]));
+console.log('this is a test for the allPositive function, the array is [-3,-49,-62,-54,0]', allPositive([-3,-49,-62,-54,0]));
+
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 

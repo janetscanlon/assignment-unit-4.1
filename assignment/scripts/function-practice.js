@@ -111,10 +111,15 @@ function sumAll(array) {
   let sum = 0;
   // TODO: loop to add items
   for(let integer of array){
-    sum = integer + integer
+    sum += integer;
   } 
   // TODO: return the sum
+  return sum;
 }
+
+console.log('this is a test for the sumAll function the array is [74,52,7,6]', sumAll([74,52,7,6]));
+console.log('this is a test for the sumAll function the array is [1,2,3,4]', sumAll([1,2,3,4]));
+
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
